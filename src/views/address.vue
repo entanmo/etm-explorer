@@ -45,7 +45,10 @@
                 <span>{{timestamp | formatDate}}</span>
               </template>
               <template slot="senderId" slot-scope="senderId">
-                <span class="td-d" :data-id="senderId" @click="address">{{senderId}}</span>
+                <a-tooltip :trigger="['hover','click']">
+                  <template slot='title'>{{senderId}}</template>
+                  <span class="td-d" :data-id="senderId" @click="address">{{senderId}}</span>
+                </a-tooltip>
               </template>
               <template slot="type" slot-scope="type, data">
                 <span class="typeicon typeout" v-if="type == 0 && data.state">OUT</span>
@@ -53,7 +56,10 @@
                 <span class="typeicon typeself" v-else>SELF</span>
               </template>
               <template slot="recipientId" slot-scope="recipientId">
-                <span class="td-d" :data-id="recipientId" @click="address">{{recipientId}}</span>
+                <a-tooltip :trigger="['hover','click']">
+                  <template slot='title'>{{recipientId}}</template>
+                  <span class="td-d" :data-id="recipientId" @click="address">{{recipientId}}</span>
+                </a-tooltip>
               </template>
               <template slot="amount" slot-scope="amount">
                 <span>{{amount / 100000000}} ETM</span>
@@ -188,7 +194,7 @@
   .detail-list .detail-title{width: 200px;display: inline-block;color: #505050;}
   
   .blocks-table{white-space: nowrap;}
-  .blocks-table .txnid{max-width: 120px;text-overflow: ellipsis;overflow: hidden;white-space: normal;}
+  .blocks-table .td-d{max-width: 150px;text-overflow: ellipsis;overflow: hidden;white-space: normal;}
   .typeicon{width: 45px;height: 24px;line-height: 24px;border-radius: 5px;font-size: 12px;font-weight: 600;text-align: center;display: inline-block;}
   .typeout{color: #876cff;background: #F3F1FF;}
   .typein{color: #2cc32b;background: #EBF9EA;}
