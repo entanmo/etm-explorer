@@ -167,8 +167,10 @@
         this.$router.push({path:'blockdetails',query:{blockHeight: e.srcElement.dataset.id}});
       },
       address(e){
-        this.reload();
-        this.$router.push({path:'address',query:{addressId: e.srcElement.dataset.id}});
+        if(e.srcElement.dataset.id != this.addressId){
+          this.reload();
+          this.$router.push({path:'address',query:{addressId: e.srcElement.dataset.id}});
+        }
       },
     },
     components:{

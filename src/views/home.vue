@@ -100,7 +100,7 @@
                 <template slot='title'>{{$t('fee')}} {{item.fee / 100000000}} ETM</template>
                 <div class="list-area3 d-ib f-r">
                   <img src="../assets/img/icon8.svg"/>
-                  <p>{{item.amount / 100000000}} ETM</p>
+                  <p>{{Math.floor(item.amount / 100000000 * 100) / 100}} ETM</p>
                 </div>
               </a-tooltip>
               <div class="c-b"></div>
@@ -350,7 +350,7 @@
   .list-box .list-area3{height: 24px;line-height: 24px;margin: 5px 0 0 0;padding: 0 6px;text-align: center;background: #FFF8E4;color: #fec118;border-radius: 4px;cursor: pointer;position: absolute;top: 16px;right: 0;}
   .list-box .list-area3 img{width: 18px;height: 18px;margin:3px 1px 0 0;vertical-align: top;}
   .list-box .list-area3 p{display: inline-block;}
-  .details-transac .list-box .list-area1{width: 104px;}
+  .details-transac .list-box .list-area1{width: 82px;}
   
   .ellipsis{margin-bottom: -5px;width: 100%;text-overflow:ellipsis;overflow: hidden;white-space: normal;}
   
