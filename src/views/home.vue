@@ -204,7 +204,7 @@
       },
       //成立时间计算
       _establish(){
-        let date = '2017-07-01 00:00:00';
+        let date = '2019-03-01 00:00:00';
         date = date.substring(0,19);
         date = date.replace(/-/g,'/');
         let beforeTime = new Date(date).getTime();

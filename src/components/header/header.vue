@@ -107,7 +107,12 @@
               <a-menu-item><a href="http://www.entanmo.com/#/articleListThree">{{$t('header_sound')}}</a></a-menu-item>
               <a-menu-item><a href="http://forum.entanmo.io/">{{$t('header_forum')}}</a></a-menu-item>
             </a-sub-menu>
-            <a-menu-item key="sub7"><span><a href="https://wallet.entanmo.com/">{{$t('header_wallet')}}</a></span></a-menu-item>
+			<a-sub-menu key="sub7">
+			  <span slot="title">{{$t('header_apply')}}</span>
+			  <a-menu-item><a href="https://wallet.entanmo.com/">{{$t('header_wallet')}}</a></a-menu-item>
+			  <a-menu-item><a href="http://explorer.entanmo.io">{{$t('header_explorer')}}</a></a-menu-item>
+			</a-sub-menu>
+            <!-- <a-menu-item key="sub7"><span><a href="https://wallet.entanmo.com/">{{$t('header_wallet')}}</a></span></a-menu-item> -->
             <a-sub-menu key="sub8">
               <span slot="title">{{$t('header_datum')}}</span>
               <a-menu-item><a href="http://www.entanmo.com/docs/ETM%20Science_zh-CN.pdf">{{$t('header_white')}}</a></a-menu-item>

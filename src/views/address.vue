@@ -38,8 +38,8 @@
                   <span class="txnid td-d" :data-id="id" @click="transacDetails">{{id}}</span>
                 </a-tooltip>
               </template>
-              <template slot="confirmations" slot-scope="confirmations">
-                <span class="td-d" :data-id="confirmations" @click="blockDetails">{{confirmations}}</span>
+              <template slot="height" slot-scope="height">
+                <span class="td-d" :data-id="height" @click="blockDetails">{{height}}</span>
               </template>
               <template slot="timestamp" slot-scope="timestamp">
                 <span>{{timestamp | formatDate}}</span>
@@ -90,7 +90,7 @@
       return {
         columns: [
           { title: i18n.t('txniD'), dataIndex: 'id', scopedSlots: { customRender: 'id' }, fixed: 'left'},
-          { title: i18n.t('block'), dataIndex: 'confirmations', scopedSlots: { customRender: 'confirmations' },},
+          { title: i18n.t('block'), dataIndex: 'height', scopedSlots: { customRender: 'height' },},
           { title: i18n.t('timestamp'), dataIndex: 'timestamp', scopedSlots: { customRender: 'timestamp' },},
           { title: i18n.t('from'), dataIndex: 'senderId', scopedSlots: { customRender: 'senderId' },},
           { title: '',dataIndex: 'type', scopedSlots: { customRender: 'type' }, },
