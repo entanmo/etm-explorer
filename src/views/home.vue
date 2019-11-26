@@ -18,12 +18,12 @@
       <v-search></v-search>
 
       <div class="quick">
-        <div class="quick-list">
+        <!-- <div class="quick-list">
           <p class="quick-title">{{$t('home_price')}}</p>
           <p class="quick-data">${{last}}</p>
           <p class="quick-small"><span>${{marketCap}}</span> {{$t('home_market')}}</p>
           <img src="../assets/img/icon1.svg" class="quick-img quick-img1 p-a"/>
-        </div>
+        </div> -->
         <div class="quick-list">
           <p class="quick-title">{{$t('home_height')}}</p>
           <p class="quick-data">{{height}}</p>
@@ -321,7 +321,7 @@
   .realtime .realtime-text{font-size: 16px;margin-right: 18px;}
   
   .quick{margin: 20px 0 10px 0;height: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;}
-  .quick-list{width: 18.8%;height: 115px;margin-bottom: 10px;border-radius: 5px;box-shadow: 0 0 10px #E5E8ED;text-align: left;display: inline-block;background: #fff;position: relative;transition: all .4s;
+  .quick-list{width: 23.8%;height: 115px;margin-bottom: 10px;border-radius: 5px;box-shadow: 0 0 10px #E5E8ED;text-align: left;display: inline-block;background: #fff;position: relative;transition: all .4s;
   -webkit-transition: all .5s; /* Safari */}
   .quick-list:hover{box-shadow: 0 0 10px #ccc;cursor: pointer;transform: scale(1.05);}
   .quick-list:hover .quick-img{transform:rotate(360deg);}
