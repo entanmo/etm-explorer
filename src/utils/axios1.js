@@ -4,7 +4,8 @@ import middleWare from './middleWare'
 
 //创建axios实例
 const http = axios.create({
-  baseURL: 'https://api.entanmo.com',
+  baseURL: 'https://api.entanmo.io',
+  // baseURL: 'http://39.105.210.35:4096',
   timeout: 30000
 })
 

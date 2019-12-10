@@ -87,7 +87,7 @@
                   <template slot='title'>{{item.blockId}}</template>
                   <p class="ellipsis c-0283ff td-u" @click="transacDetails" :data-id="item.id">{{item.blockId}}</p>
                 </a-tooltip>
-                <p>{{(nowTime - item.timestamp) | divisionTime}} {{$t('home_sesago')}}</p>
+                <p>{{(item.timestamp === 0 ? (Date.now() - (new Date("2019/11/27 12:00:00")).getTime())/1000 : (nowTime - item.timestamp)) | divisionTime}} {{$t('home_sesago')}}</p>
               </div>
               <div class="list-area2 d-ib f-l">
                 <p>{{$t('from')}}: <span class="c-0283ff td-u" @click="address" :data-id="item.senderId">{{item.senderId}}</span></p>
@@ -204,7 +204,7 @@
       },
       //成立时间计算
       _establish(){
-        let date = '2019-03-01 00:00:00';
+        let date = '2019-11-27 12:00:00';
         date = date.substring(0,19);
         date = date.replace(/-/g,'/');
         let beforeTime = new Date(date).getTime();
