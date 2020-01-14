@@ -17,7 +17,7 @@ import i18n from '@/lang'
 import VueSocketIO from 'vue-socket.io'
 Vue.use(new VueSocketIO({
   debug: false,
-  connection: 'http://40.114.70.112:2019',
+  connection: 'http://20.188.242.113:2019',
   vuex: {
     store,
     actionPrefix: 'SOCKET_',

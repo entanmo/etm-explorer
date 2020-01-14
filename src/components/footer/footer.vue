@@ -3,7 +3,7 @@
     <div class="footer">
       <div class="content">
         <div class="footer-box">
-          <p class="footer-text">©2014-2019 En-Tan-Mo. All Rights Reserved.</p>
+          <p class="footer-text">©2014-2020 En-Tan-Mo. All Rights Reserved.</p>
           <div class="footer-link d-ib f-l">
             <a href="https://twitter.com/entanmo1"><img src="../../assets/img/footer-icon1.png"/></a>
             <a href="https://github.com/entanmo"><img src="../../assets/img/footer-icon2.png"/></a>
